@@ -33,14 +33,14 @@ app.post('/send', (req,res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'gleb.portfolio@gmail.com',
-            pass: 'password-here'
+            user: 'inderjitsingh.sing@gmail.com',
+            pass: 'Fanshawecollege'
         }
     });
 
     let mailOptions = {
-        from: '"Portfolio website" <connect@gleb-zavizenov.com>',
-        to: "gleb.zavizenov@gmail.com",
+        from: '"Portfolio website" <connect@inderjitsingh.com>',
+        to: "inderjitsingh.sing@gmail.com",
         subject: "Message from portfolio website",
         html: output 
     };
