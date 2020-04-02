@@ -1,9 +1,6 @@
 var express = require('express');
 var app = express();
 
-// Importing Socket.io library
-const io = require('socket.io')();
-
 const port = process.env.PORT || 3030;
 
 // tell express where our static files are (js, images, css etc)
@@ -17,38 +14,41 @@ const server = app.listen(port, () => {
     console.log(`app is running on port ${port}`);
 });
 
-//This all is for Socket.io messaging functionality
-
-//attach socket.io
-io.attach(server);
-
-io.on('connection', function(socket) {
-    console.log("user is connected!");
-    socket.username = 'anonymous';
-    socket.emit('connected', {sID: `${socket.id}`, message: 'new connection'});
-
-    socket.on('chat_message', function(msg){
-        console.log(msg);
-       
-        io.emit('new_message', {id: socket.id, message: msg});
-    })
 
 
+app.post('/send', (req,res) => {
+    const output = `
+    <h1>You have a new message from your website!</h1>
+    <h3>Contact details</h3>
+    <ul>
+        <li>Name: ${req.body.name}</li>
+        <li>Email: ${req.body.email}</li>
+        <li>Message: ${req.body.message}</li>
+    </ul>
+    `;
 
-
-    socket.on('join', function(username){
-        if(username != null){
-            socket.username = username
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'gleb.portfolio@gmail.com',
+            pass: 'password-here'
         }
-    })
+    });
 
+    let mailOptions = {
+        from: '"Portfolio website" <connect@gleb-zavizenov.com>',
+        to: "gleb.zavizenov@gmail.com",
+        subject: "Message from portfolio website",
+        html: output 
+    };
 
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error,info) => {
+        if(error){
+            console.log(error);
+        }
     
-    // listen for a disconnect event
-    socket.on('disconnect',function(){
-        console.log('a user is disconnected');
-
-        message = `${socket.id} has left the chat!`;
-        io.emit('user_disconnect', message);
     })
-});
+
+    });

@@ -1,7 +1,7 @@
 {
-  "name": "vanrys_t_chatapp",
+  "name": "singh_i_portfolio",
   "version": "1.0.0",
-  "description": "social media app ",
+  "description": "portfolio app ",
   "main": "app.js",
   "scripts": {
     "start": "node app"
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "nodemailer": "^6.4.6",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
