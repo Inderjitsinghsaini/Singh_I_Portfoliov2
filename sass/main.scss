@@ -1,8 +1,6 @@
 @import '_vars';
-@import 'modules/_navbar';
 @import 'modules/_users';
 @import 'modules/_lightbox';
-
 @import 'modules/errors'; // error page
 
 body {
@@ -48,6 +46,8 @@ h1{color:black}
 #socialmedia
 {
     margin-top: 12px;
+    margin-left:-35px;
+    
 }
     
 
@@ -78,38 +78,8 @@ h1{color:black}
     display: none;
 }
 
-.mainNav
-{
-  width: 500px;
-  height: 25px;
-margin: 0 auto;
-}
-
-.mainNav ul
-{
-  list-style-type: none;
-  padding: 0;
-}
-
-.mainNav ul li {  
-  font-size: 14px;
-  display: inline;
-  cursor: pointer;
-  margin-left: 25px;
-}
-
-.mainNav ul li a
-{
-  color:  #ffffff;
-  padding: 5px;
-  text-decoration:none;
-  font-family:helvetica, arial, sans-serif;
-  font-size: 15px;
-}
-
-.mainNav ul li a:hover {
-  padding: 5px;
-  background-color: #000000;
+.mainNav{
+    display:none;
 }
 
 .user-panel-heading
@@ -129,11 +99,39 @@ margin: 0 auto;
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-
-    .my-logo{
+    .mainNav
+    {
+      width: 500px;
+      height: 25px;
+    margin: 0 auto;
     
-
     }
-
+    
+    .mainNav ul
+    {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .mainNav ul li {  
+      font-size: 14px;
+      display: inline;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    
+    .mainNav ul li a
+    {
+      color:  #ffffff;
+      padding: 5px;
+      text-decoration:none;
+      font-family:helvetica, arial, sans-serif;
+      font-size: 15px;
+    }
+    
+    .mainNav ul li a:hover {
+      padding: 5px;
+      background-color: #000000;
+    }
 }
 @import 'modules/_footer'

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css stuff -->
+    <!-- link to reset -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <title>SinghInderjit</title>
+</head>
+<main class="container">
+    
+<body>
+    <header>
+    <img src="images/myLogo.png" class = "myLogo">
+
+    <ul id="socialmedia">
+        <li><a href="https://www.behance.net/inderjitsingh2" target="_blank"><img src="images/behance.png"  class="behance"></a></li>
+        <li><a href="https://www.instagram.com/inderjit._.singh/" target="_blank"><img src="images/instagram.png" class="instagram"></a></li>
+        <li><a href ="https://www.linkedin.com/in/inderjit-singh-311184198/" target="_blank"><img src="images/linkedin.png"  class="linkedin"></a></li>
+
+    </ul>
+
+    <nav class="mainNav">
+        <ul>
+    <li><a href="#section1">ABOUT ME</a></li>
+    <li><a href="#section3">RECENT WORK</a></li>
+    <li><a href="#contactSection">REACH US</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <section id="section1" class="panel">
+
+        
+      <div class="my_intro">
+         <img src="images/inder_vector.png" alt="avatar" class="my-avatar">
+              
+             
+  
+              <h1 id="firstName">INDERJIT</h1> <h1 id="lastName">SINGH</h1>
+              <p id="myDescription">Dedicated and Ambitious ready to sharpen my skills as a media designer. I know a plenty of designing and coding skills that you are seeking for. if you want to have your product promoted or want your company website give a hit to the contact panel.<br></p>
+      </div>
+      
+  
+  </section>
+  <h1 class="sectionhead">I CAN DO</h1>
+   <section id="section2" class="panel">
+      <div class="my_skills">
+  
+          
+          <div class="skill">
+  
+         <img src="images/advertising.svg" alt="skill" class="my-skills">
+              
+              <h1 id="Type">Advertising</h1>
+              </div>
+              <div class="skill">
+              <img src="images/coding.svg" alt="skill" class="my-skills">
+              
+              <h1 id="Type">Coding</h1>
+              </div>
+              <div class="skill">
+              <img src="images/design.svg" alt="skill" class="my-skills">
+              
+              <h1 id="Type">Design</h1>
+              </div>
+  
+      </section>
+  
+      </div>
+      <!---videolightbox-->
+          <section id="section3" class="panel">
+              <h1 class="sectionhead">SOME GLIMPSES OF MY RECENT WORK</h1>
+          <div class="lightbox-div"><img src="images/play-button.svg" class="playIcon"></div>
+          <section class="lightbox">
+          <a href="#" class="close-lightbox">X</a>
+          <video  class="reel-video" src="video/demoVideo.mp4" type="video/mp4" onended="videoEnded()"></video>
+          <section class ="video-controls">
+              <i class="fas fa-play"></i>
+              <i class="fas fa-pause-circle"></i>
+              <i class="fas fa-backward"></i>
+          </section>
+      </section>
+  
+      <div id="portfolioSection">
+  
+          <div id="portfolio1"><a href="#img1">
+    <img src="images/anglersLogo.png" class="thumbnail">
+  </a></div>
+  <a href="#_" class="lightboximg" id="img1">
+    <img src="images/anglersWebsite.jpg">
+  </a>
+  
+          <div id="portfolio2"><a href="#img2">
+    <img src="images/couplesResort.png" class="thumbnail">
+  </a></div>
+  <a href="#_" class="lightboximg" id="img2">
+    <img src="images/couplesResortWebsite.png">
+  </a>
+       <div id="portfolio3"><a href="#img3">
+    <img src="images/beerandwine.png" class="thumbnail">
+  </a></div>
+  <a href="#_" class="lightboximg" id="img3">
+    <img src="images/mashup.png">
+  </a>
+   <div id="portfolio4"><a href="#img4">
+    <img src="images/orgenLogo.png" class="thumbnail">
+  </a></div>
+  <a href="#_" class="lightboximg" id="img4">
+    <img src="images/orgenlogo.png">
+  </a>
+   <div id="portfolio5"><a href="#img5">
+    <img src="images/infographic.png" class="thumbnail">
+  </a></div>
+  <a href="#_" class="lightboximg" id="img5">
+    <img src="images/infographic.jpg">
+  </a>
+   <div id="portfolio6"><a href="#img6">
+    <img src="images/counterDisplay.png" class="thumbnail">
+  </a></div>
+  <a href="#_" class="lightboximg" id="img6">
+    <img src="images/counterDisplayAllAngles.png">
+  </a>
+  
+  </div>
+
+  
+  
+      <section id="contactSection" class="panel">
+          <h1 class="sectionhead">REACH US</h1>
+          <form action="/contact" id="contact-form" method="post" role="form">
+      <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="name">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="email">
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" name="subject" placeholder="subject">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+  
+      <button type="submit">Submit</button>
+  </form>
+  
+      </section>
+  
+    <script type="module" src="js/main.js"></script>
+
+    <footer>
+        <div class="copyright_section"></div>
+    </footer>
+    </main>
+    
+</body>
+
+</html>
