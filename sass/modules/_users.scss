@@ -9,7 +9,7 @@
 }
 
 
-    .my-avatar { width: 250px; height:250px;float:center; margin-top:30px;}
+    .my-avatar { width: 270px; height:250px;float:center; margin-top:30px;}
     
     #myName
     {
@@ -104,6 +104,18 @@
 
         h1, h3 { margin: 5px 0; }
     }
+
+    #reelHead
+    {
+        font-family:helvetica,arial,sans-serif;
+        font-size:30px;
+    }
+
+    #reeltext
+    {
+        font-family:helvetica,arial,sans-serif;
+        font-size:20px;
+    }
     .lightbox-div
 {
     width:210px;
@@ -132,6 +144,14 @@
 
 }
 
+#subSect
+{
+    font-size:40px;
+    font-family:helvetica,arial,sans-serif;
+    margin-top:60px;
+    color:#363636;
+
+}
 
 .portfolioPiece
 {
@@ -240,7 +260,7 @@
 }
 #contactSection{
 
-    margin-top:200px;
+    margin-top:80px;
 }
 
 form{
@@ -249,6 +269,8 @@ form{
     justify-content:center;
     align-items:center;
     margin:0 auto;
+    
+    margin-left: -30px;
     width:400px;
     font-family:helvetica,arial,sans-serif;
     font-size: 25px;
@@ -288,6 +310,12 @@ button{
     border:none;
 }
 
+.copyright
+{
+color:#fff;
+font-size:20px;
+font-family:helvetica,arial,sans-serif;
+}
 //this is media queries for desktop
 @media screen 
   and (min-device-width: 1200px) 
@@ -506,6 +534,11 @@ button{
     margin-top:100px;
 }
 
+.work
+{
+    color:#000;
+    
+}
 #portfolioType
 {
     font-size:15px;
@@ -555,6 +588,7 @@ button{
     border:none;
 }
 }
+
 
 //media queries for tablet
 

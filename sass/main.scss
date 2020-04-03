@@ -1,6 +1,7 @@
 @import '_vars';
 @import 'modules/_users';
 @import 'modules/_lightbox';
+@import 'modules/_project';
 @import 'modules/errors'; // error page
 
 body {
@@ -94,6 +95,20 @@ h1{color:black}
     width:100px;
     height:100px;
 }
+.copyright_section
+{
+    width:100%;
+    height:30px;
+    background-color:#636363;
+    color:#fff;
+}
+.copyright
+{
+color:#fff;
+font-size:20px;
+font-family:helvetica,arial,sans-serif;
+}
+
 
 @media screen 
   and (min-device-width: 1200px) 
