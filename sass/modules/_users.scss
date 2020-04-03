@@ -85,24 +85,11 @@
        color:#ffffff;
    }
 
-    .team { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
     
-
-        .u-link { 
-            display: block; 
-            //width: 150px;  
-            text-decoration: none;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px;
-        }
-
-        h1, h3 { margin: 5px 0; }
+    .resume-link{
+        font-size:helvetica,arial,sans-serif;
+        color:white;
+        text-decoration:none;
     }
 
     #reelHead
@@ -310,12 +297,7 @@ button{
     border:none;
 }
 
-.copyright
-{
-color:#fff;
-font-size:20px;
-font-family:helvetica,arial,sans-serif;
-}
+
 //this is media queries for desktop
 @media screen 
   and (min-device-width: 1200px) 
