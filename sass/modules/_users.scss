@@ -61,6 +61,7 @@
        font-size:45px;
        letter-spacing: 3px;
        color:#ffffff;
+       background-color:#000;
        
    }
    .my-skills 
@@ -86,10 +87,12 @@
    }
 
     
-    .resume-link{
+    .resume-link {
         font-size:helvetica,arial,sans-serif;
         color:white;
         text-decoration:none;
+        font-size:25px;
+        background-color: #000;
     }
 
     #reelHead
@@ -159,7 +162,7 @@
     background-color:#a1a1a1;
     margin:0 auto;
     border-radius: 5px;
-    margin-top:30px;
+    margin-top:-14px;
     margin-left:40px;
 
 }
@@ -167,13 +170,13 @@
 #portfolio2
 
 {
-    position:absolute;
+    position: relative;
     width:113px;
     height:109px;
     background-color:#a1a1a1;
     margin:0 auto;
     border-radius: 5px;
-    margin-top:30px;
+    margin-top:-15px;
     margin-left:200px;
 
 }
@@ -187,7 +190,7 @@
     background-color:#a1a1a1;
     margin:0 auto;
     border-radius: 5px;
-    margin-top:150px;
+    margin-top:10px;
     margin-left:40px;
 
 }
@@ -201,7 +204,7 @@
     background-color:#a1a1a1;
     margin:0 auto;
     border-radius: 5px;
-    margin-top:150px;
+    margin-top:-140px;
     margin-left:200px;
 
 }
@@ -214,7 +217,7 @@
     background-color:#a1a1a1;
     margin:0 auto;
     border-radius: 5px;
-    margin-top:270px;
+    margin-top:5px;
     margin-left:40px;
 
 }
@@ -228,17 +231,74 @@
     background-color:#a1a1a1;
     margin:0 auto;
     border-radius: 5px;
-    margin-top:270px;
+    margin-top:-135px;
     margin-left:200px;
 
 }
+
+.portName1
+{
+    position:absolute;
+    color:#000;
+    font-family: helvetica,arial,sans-serif;
+    font-size:12px;
+    margin-top:100px;
+    margin-left:45px;
+    
+
+}
+.portName2
+{
+    color:#000;
+    font-family: helvetica,arial,sans-serif;
+    font-size:12px;
+    margin-top:6px;
+    margin-left:150px;
+    
+}
+
+.portName3
+{
+    position:relative;
+    color:#000;
+    font-family: helvetica,arial,sans-serif;
+    font-size:12px;
+    margin-top:135px;
+    margin-left:-170px;
+}
+
+.portName4
+{
+    position:relative;
+    color:#000;
+    font-family: helvetica,arial,sans-serif;
+    font-size:12px;
+    margin-left:140px;  
+    margin-top:-21px;
+}
+
+.portName5{
+    position:relative;
+    color:#000;
+    font-family: helvetica,arial,sans-serif;
+    font-size:12px;
+    margin-top:130px;
+    margin-left:-160px;
+}
+.portName6
+{
+    position:relative;
+    color:#000;
+    font-family: helvetica,arial,sans-serif;
+    font-size:12px;
+    margin-left:150px;
+    margin-top: -24px;
+}
 .thumbnail
 {
-    width: auto;
-    max-width: 150px;
-    height: auto;
-    max-height: 100px;
-    margin-top:9px;
+    width:100%;
+    height:60%;
+    margin-top:15px;
 }
 
 #portfolioType
@@ -361,12 +421,15 @@ button{
        color:#ffffff;
        text-decoration:underline;
    }
+  
+   
    .my_skills{
        display:flex;
        flex-direction:row;
        justify-content:space-between;
        width: 1000px;
        margin:0 auto;
+       
    }
 
 
