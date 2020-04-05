@@ -110,15 +110,14 @@ font-family:helvetica,arial,sans-serif;
 }
 
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media (min-width: 1281px) { 
     .mainNav
     {
       width: 500px;
       height: 25px;
-    margin: 0 auto;
+   
+    display:flex;
+    margin-left:800px;
     
     }
     
