@@ -44,6 +44,7 @@
      font-size:25px;
      font-family: Helvetica, arial, sans-serif;
      line-height: 35px; 
+     font-style:italic;
       
    }
 
@@ -505,6 +506,7 @@ button{
      line-height: 35px; 
      width: 400px;
      margin-left:300px;
+     font-style:italic;
       
    }
    .sectionhead
@@ -904,22 +906,25 @@ button{
 
 
 
-    .my-avatar { width: 347px; height:300px; float:left; margin-left:80px; margin-top:80px; }
+    .my-avatar { width: 447px; height:400px; float:left; margin-left:100px; margin-top:100px; padding:0; border:0; }
     
     #myName
     {
         display:flex;
         flex-direction:row;
+        
        
         
     }
 
     #firstName
     {
-        font-size:50px;
+        font-size:100px;
         font-family:helvetica,arial,sans-serif;
         color:#ffffff;
         letter-spacing:2px;
+        margin-left:10px;
+        
        
        
     }
@@ -927,20 +932,23 @@ button{
 
     #lastName
     {
-        font-size:50px;
+        font-size:100px;
         font-family:helvetica,arial,sans-serif;
         color:#000000;
         letter-spacing:2px;
         margin-left: 20px;
+        margin-top:-50px;
     }
     
    #myDescription
    {
-     font-size:25px;
+     font-size:30px;
      font-family: Helvetica, arial, sans-serif;
      line-height: 35px; 
      width: 400px;
-     margin-left:50%;
+     margin-left:1050px;
+     font-style:italic;
+     margin-top:-50px;
       
    }
    .sectionhead
@@ -1264,11 +1272,9 @@ button{
 }
 .thumbnail
 {
-    width: auto;
-    max-width: 350px;
-    height: auto;
-    max-height: 300px;
-    margin-top:100px;
+    width:80%;
+    height:60%;
+    justify-content:center;
 }
 
 .work
