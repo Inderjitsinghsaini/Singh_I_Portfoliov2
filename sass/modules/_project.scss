@@ -36,3 +36,48 @@
     width:80%;
 
 }
+@media (min-width: 1281px) {
+
+
+    .project1{
+        width:50%;
+    
+    }
+    .projectHead
+    {
+        font-family:helvetica,arial,sans-serif;
+        font-size:50px;
+        letter-spacing:3px;
+        color:#fff;
+        background-color:#000;
+    }
+    
+    .projectText
+    {
+        font-family:helvetica,arial,sans-serif;
+        font-size:30px;
+         
+    }
+    .fab
+    {
+        width:400px;
+        height:400px;
+    }
+    
+    .stuffused
+    {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        float:center;
+    }
+    
+    .firstPage
+    {
+        width:80%;
+    
+    }
+
+
+
+}
